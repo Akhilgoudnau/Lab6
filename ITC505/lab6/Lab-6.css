@@ -1,0 +1,62 @@
+/* Styles for Holy Grail layout */
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px; /* Sidebar, Content, Advertisement columns */
+    grid-template-rows: auto 1fr auto; /* Header, Content, Footer rows */
+    grid-template-areas:
+      "header header header"
+      "sidebar content advertisement"
+      "footer footer footer";
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    grid-area: content;
+    padding: 20px;
+  }
+  
+  .advertisement {
+    grid-area: advertisement;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .advertisement img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  
